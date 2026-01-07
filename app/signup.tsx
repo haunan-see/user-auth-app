@@ -92,7 +92,12 @@ export default function SignupScreen() {
 
           {error ? <Text style={styles.errorText}>{error}</Text> : null}
 
-          <Button title="Signup" onPress={handleSignup} loading={loading} />
+          <Button
+            title="Signup"
+            onPress={handleSignup}
+            loading={loading}
+            disabled={!name.trim() || !email.trim() || !password.trim()}
+          />
 
           <TouchableOpacity
             style={styles.linkButton}

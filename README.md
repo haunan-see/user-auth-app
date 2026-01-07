@@ -11,6 +11,15 @@ This app allows users to:
 - **Log out** and return to the login screen
 - **Stay logged in** even after closing and reopening the app
 
+## Screenshots
+
+<div align="center">
+  <img src="screenshots/login.png" alt="Login Screen" width="300"/>
+  <img src="screenshots/login-error.png" alt="Home Screen" width="300"/>
+  <img src="screenshots/signup.png" alt="Signup Screen" width="300"/>
+  <img src="screenshots/home.png" alt="Home Screen" width="300"/>
+</div>
+
 ## Setup Instructions
 
 ### Prerequisites

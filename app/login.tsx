@@ -24,11 +24,6 @@ export default function LoginScreen() {
   const handleLogin = async () => {
     setError("")
 
-    if (!email.trim() || !password.trim()) {
-      setError("Please fill in all fields")
-      return
-    }
-
     setLoading(true)
     const result = await login(email, password)
     setLoading(false)
@@ -74,7 +69,12 @@ export default function LoginScreen() {
 
         {error ? <Text style={styles.errorText}>{error}</Text> : null}
 
-        <Button title="Login" onPress={handleLogin} loading={loading} />
+        <Button
+          title="Login"
+          onPress={handleLogin}
+          loading={loading}
+          disabled={!email.trim() || !password.trim()}
+        />
 
         <TouchableOpacity
           style={styles.linkButton}
